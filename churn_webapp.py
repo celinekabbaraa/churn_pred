@@ -103,7 +103,7 @@ def img_to_bytes(img_path):
     encoded = base64.b64encode(img_bytes).decode()
     return encoded
 
-st.sidebar.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=300 height=170>](https://eatapp.co)'''.format(img_to_bytes('/Users/celine/Desktop/eat.png')), 
+st.sidebar.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=300 height=170>](https://eatapp.co)'''.format(img_to_bytes('eat.png')), 
                     unsafe_allow_html=True)
 
 #-------------------------------------
